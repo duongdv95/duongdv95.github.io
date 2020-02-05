@@ -4,10 +4,10 @@
       <span class="gt">&gt; </span>{{typeValue}}<span class="caret">&nbsp;</span>
     </div>
     <div class="description">
-      I am an aspiring web developer. My passion is developing apps that
+      Hello world! I am an aspiring web developer. My passion is developing apps that
       solve unique problems.
       <div>
-        Check out my projects <a href="/projects">here.</a>
+        Check out some of my projects <a href="#projects">here.</a>
       </div>
     </div>
   </div>
@@ -59,10 +59,13 @@ a {
   font-size: 3.5em;
   color: #6292d0;
 }
-.description {
+.introduction .description {
   font-size: 1.3em;
   margin: 2.5em 0;
   line-height: 1.5em;
+  a {
+      color: #00e6e6;
+  }
 }
 
 .caret {
@@ -70,6 +73,14 @@ a {
   animation: blink-caret 1s step-end infinite;
 }
 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #6292d0; }
+}
+
+.title {
+    margin-top: 1em;
+}
 .terminal {
   margin-bottom: 2.5em;
 }
@@ -110,11 +121,6 @@ a {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
   color: white;
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #6292d0; }
 }
 
 .images-container {

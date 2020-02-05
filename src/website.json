@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "image": "aquariumpardata.png",
+      "title": "Aquarium PAR Database",
+      "body": "Built a web app using ReactJS and NodeJS to share aquarium PAR data on various lighting fixtures. Developed REST API and utilized DynamoDB and AWS S3 with Cloudfront CDN to store data and images. Applied CSS to style responsive pages for desktop and mobile devices. Generated $22.16 in revenue and averaged 116 new users per month with a 46% bounce rate",
+      "demoLink": "https://aquariumpardata.com",
+      "sourceLink": "#",
+      "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
+    },
+    {
+      "image": "aquariumpardata.png",
+      "title": "Kawaii Pet Prints",
+      "body": "Developed an image proofing app that allows a graphic designer to upload completed artwork where customers are able to approve the work with a selection of backgrounds Wrote 9 REST endpoints for logging a customer in, retrieving data, updating data, and uploading images",
+      "demoLink": "https://aquariumpardata.com",
+      "sourceLink": "#",
+      "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
+    },
+    {
+      "image": "aquariumpardata.png",
+      "title": "How Many Jelly Beans?",
+      "body": "Built a web app using ReactJS, NodeJS, and PostGreSQL to rank players participating in a fundraising game in a guessing game. Wrote 9 API endpoints to control the flow of data and utilitized sockets.io for real-time updates of new players and calculating rank when the game ends.",
+      "demoLink": "https://aquariumpardata.com",
+      "sourceLink": "#",
+      "techUsed": ["css", "html", "javascript", "node", "react", "postgres"]
+    },
+    {
+      "image": "aquariumpardata.png",
+      "title": "Portfolio",
+      "body": "This website.",
+      "demoLink": "https://aquariumpardata.com",
+      "sourceLink": "#",
+      "techUsed": ["css", "html", "javascript", "vue"]
+    }
+  ]
+}
