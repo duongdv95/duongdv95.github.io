@@ -29,7 +29,7 @@
       "title": "Portfolio",
       "body": "Built using VueJS, this page is organized by 4 main components: Introduction, Terminal, Projects, and Contact. Changes to information on this site can be edited with a single JSON file which is used to render the components.",
       "demoLink": "https://danielduong.com",
-      "sourceLink": "https://github.com/duongdv95/danielduong",
+      "sourceLink": "https://github.com/duongdv95/duongdv95.github.io",
       "techUsed": ["css", "html", "javascript", "vue"]
     }
   ],

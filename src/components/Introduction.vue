@@ -57,7 +57,7 @@ a {
   color: #42b983;
 }
 .title {
-  font-size: 3.5em;
+  font-size: 2.8em;
   color: $blue;
 }
 .introduction .description {
