@@ -1,14 +1,7 @@
 <template>
   <div class="technologies">
     <div class="technologies-images">
-      <img src='@/assets/css.svg'/>
-      <img src='@/assets/html.svg'/>
-      <img src='@/assets/javascript.png'/>
-      <img src='@/assets/node.png'/>
-      <img src='@/assets/react.png'/>
-      <img src='@/assets/vue.png'/>
-      <img src='@/assets/dynamodb.png'/>
-      <img src='@/assets/s3.png'/>
+      <img :src="require(`@/assets/` + item + `.png`)" v-for="(item, index) in techUsed" v-bind:key="index"/>
     </div>
   </div>
 </template>
@@ -21,19 +14,6 @@ export default {
     techUsed: {
       type: Array
     }
-  },
-  data: () => {
-    return {
-      techUsed: this.techUsed
-    }
-  },
-  methods: {
-    logg () {
-      console.log(this.techUsed)
-    }
-  },
-  created () {
-    this.logg()
   }
 }
 
@@ -48,8 +28,8 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
   img {
-    height: 60px;
-    padding: 1em;
+    height: 50px;
+    padding: 0.5em;
   }
 }
 </style>

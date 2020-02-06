@@ -7,19 +7,23 @@
 </template>
 
 <style lang="scss">
+@import '@/styles/_websiteStyle';
 #nav {
   padding: 30px;
   display: flex;
   justify-content: flex-end;
   a {
+    text-decoration: none;
     font-weight: bold;
     font-size: 1.4em;
-    color: #525f7f;
+    color: $fontcolor;
     margin: 0 0.5em;
-
     &.router-link-exact-active {
       color: #6292d0;
     }
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 </style>

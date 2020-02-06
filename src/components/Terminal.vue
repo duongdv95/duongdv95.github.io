@@ -10,19 +10,14 @@
         <div class="input">
           <span class="input-sign">&gt;</span>daniel.resume
         </div>
-        <div class="return">
-          "<a href="./daniel_duong.pdf" target="_blank">daniel_duong.pdf</a>"
+        <div class="return" v-html="resume">
         </div>
       </div>
       <div class="statement">
         <div class="input">
           <span class="input-sign">&gt;</span>daniel.contactInfo
         </div>
-        <div class="return">
-          {
-            "email": "<a href="mailto: dvduong13@gmail.com">dvduong13@gmail.com</a>",
-            "github": "<a href="https://github.com/duongdv95" target="_blank">https://github.com/duongdv95</a>"
-          }
+        <div class="return" v-html="contactInfo">
         </div>
       </div>
       <div class="statement">
@@ -30,7 +25,7 @@
           <span class="input-sign">&gt;</span>daniel.location
         </div>
         <div class="return">
-          Garden Grove, California
+          {{ location }}
         </div>
       </div>
       <div class="statement">
@@ -38,8 +33,7 @@
           <span class="input-sign">&gt;</span>daniel.hobbies
         </div>
         <div class="return">
-          ["planted aquariums", "fishing", "web development", "national parks",
-          "photography","weight lifting", "anime"]
+          {{ hobbies }}
         </div>
       </div>
       <div class="statement">
@@ -47,7 +41,7 @@
           <span class="input-sign">&gt;</span>daniel.education
         </div>
         <div class="return">
-          "B.S. in Mechanical Engineering | University of California, Irvine"
+          {{ education }}
         </div>
       </div>
       <div class="statement">
@@ -55,7 +49,7 @@
           <span class="input-sign">&gt;</span>daniel.skills
         </div>
         <div class="return">
-          ["HTML", "CSS", "JavaScript", "React", "NodeJS"]
+          {{ skills }}
         </div>
       </div>
       <div class="statement">
@@ -67,14 +61,38 @@
   </div>
 </template>
 
+<script>
+export default {
+  data: () => {
+    return {
+      contactInfo: require('@/website.json').contactInfo,
+      resume: require('@/website.json').resume,
+      location: require('@/website.json').location,
+      hobbies: require('@/website.json').hobbies,
+      education: require('@/website.json').education,
+      skills: require('@/website.json').skills
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+@import '@/styles/_websiteStyle';
+.link {
+  color: $terminallinkfontcolor;
+}
+</style>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import '@/styles/_websiteStyle';
+
 .terminal {
   line-height: 1.5em;
 }
 .terminal .terminal-header {
   height: 2em;
-  background-color: #e4e3e5;
+  background-color: $terminalheader;
   border-radius: 10px 10px 0 0;
   display: flex;
   align-items: center;
@@ -104,7 +122,7 @@
 
 .terminal .terminal-window {
   padding: 2em;
-  background-color: #5a5d7a;
+  background-color: $terminalwindow;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
   font-size: 1.2em;
@@ -116,22 +134,22 @@
   padding-right: 0.5em;
 }
 .terminal .terminal-window .statement .input {
-  color: #f7f7f7;
+  color: $terminalinputfontcolor;
 }
 .terminal .terminal-window .statement .return {
-  color: #e7d184;
+  color: $terminalreturnfontcolor;
   a {
-    color: #00e6e6;
+    color: $terminallinkfontcolor;
   }
 }
 
 .caret {
-  border-left: .15em solid #f7f7f7;
+  border-left: .15em solid $terminalinputfontcolor;
   animation: blink-caret 1s step-end infinite;
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #f7f7f7; }
+  50% { border-color: $terminalinputfontcolor; }
 }
 
 </style>

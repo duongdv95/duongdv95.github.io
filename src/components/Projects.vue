@@ -5,9 +5,8 @@
     </h1>
     <div class="projects-container">
       <div class="project-card" v-for="(item, index) in projects" v-bind:key="index">
-        <div class="card-image">
-            <img :src="require(`@/assets/` + item.image)">
-        </div>
+        <img :src="require(`@/assets/` + item.image)">
+        <div class="project-background"></div>
         <div class="card-content">
           <h2>
           {{ item.title }}
@@ -15,10 +14,10 @@
           {{ item.body }}
           <Technologies :techUsed="item.techUsed"/>
           <div class="project-links">
-            <a :href="item.demoLink">
+            <a :href="item.demoLink" target="_blank">
               Live Demo <i class="fas fa-external-link-alt"></i>
             </a>
-            <a :href="item.sourceLink" class="secondary">
+            <a :href="item.sourceLink" class="secondary" target="_blank">
               View Source <i class="fab fa-github"></i>
             </a>
           </div>
@@ -43,27 +42,39 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/_websiteStyle';
 
+.project-background {
+  background-image: url('~@/assets/projectoverlay.svg');
+  position: absolute;
+  background-size: cover;
+  height: 163%;
+  width: 64%;
+  right: 130px;
+  top: -86px;
+  display: none;
+}
 .projects .projects-container .project-card {
-  background-color: #fff;
+  background-color: $projectcardbackgroundcolor;
   border-radius: 4px;
   box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-  margin-bottom: 1.5em;
+  margin-bottom: 3em;
   position: relative;
+  overflow: hidden;
 
   .card-content h2 {
     margin-top: 0;
   }
-  .card-image {
+
+  img {
     display: none;
-    img {
-      width: 100%;
-    }
   }
 
   .card-content {
-    line-height: 1.7em;
+    line-height: 1.8em;
     padding: 2em;
+    z-index: 1;
+    font-size: 1.05em;
   }
   .project-links {
     a {
@@ -78,18 +89,18 @@ export default {
       font-size: 1em;
       font-weight: 600;
       box-sizing: border-box;
-      background: #747fe0;
+      background: $blue;
       color: #fff;
       margin-right: 1em;
     }
     a:hover {
-      background: #7795f8;
+      background: $blue;
       transform: translateY(-1px);
       box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
     }
     .secondary {
       background: #fff;
-      color: #747fe0;
+      color: $blue;
     }
     .secondary:hover {
       background: #fff;
@@ -109,11 +120,15 @@ export default {
     grid-template-columns: minmax(auto, 23em) 1fr;
   }
 
-  .card-image {
-    display: flex !important;
+  .project-background {
+    display: block;
+  }
+
+  .project-card img {
+    // display: flex !important;
+    display: block !important;
+    position: absolute;
     align-items: center;
-    // position: absolute;
-    padding-left: 2em;
     grid-column: 1 / 2;
   }
 

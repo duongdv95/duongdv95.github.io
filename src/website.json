@@ -3,34 +3,43 @@
     {
       "image": "aquariumpardata.png",
       "title": "Aquarium PAR Database",
-      "body": "Built a web app using ReactJS and NodeJS to share aquarium PAR data on various lighting fixtures. Developed REST API and utilized DynamoDB and AWS S3 with Cloudfront CDN to store data and images. Applied CSS to style responsive pages for desktop and mobile devices. Generated $22.16 in revenue and averaged 116 new users per month with a 46% bounce rate",
+      "body": "There was as lack of PAR data in the planted aquarium hobby so I decided to test some fixtures and put the data on a website. This site is built with ReactJS frontend with CSS grid to display data tables. The NodeJS/Express backend allows me to create, update, or delete fixture data and upload images.",
       "demoLink": "https://aquariumpardata.com",
-      "sourceLink": "#",
+      "sourceLink": "https://github.com/duongdv95/aquascapeparpublic",
       "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
     },
     {
-      "image": "aquariumpardata.png",
+      "image": "kawaiipetprints.png",
       "title": "Kawaii Pet Prints",
-      "body": "Developed an image proofing app that allows a graphic designer to upload completed artwork where customers are able to approve the work with a selection of backgrounds Wrote 9 REST endpoints for logging a customer in, retrieving data, updating data, and uploading images",
-      "demoLink": "https://aquariumpardata.com",
-      "sourceLink": "#",
+      "body": "I developed this art proofing app to work together with shopify. It works by making a request to a shopify API to get all the current orders. A graphic designer can upload a vectorized art that can be viewed by the customer. The customer can approve the art with a background or request a revision. This is still a work in progress.",
+      "demoLink": "#",
+      "sourceLink": "https://github.com/duongdv95/kawaiipetprints-proofing-app",
       "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
     },
     {
-      "image": "aquariumpardata.png",
+      "image": "howmanyjellybeans.png",
       "title": "How Many Jelly Beans?",
-      "body": "Built a web app using ReactJS, NodeJS, and PostGreSQL to rank players participating in a fundraising game in a guessing game. Wrote 9 API endpoints to control the flow of data and utilitized sockets.io for real-time updates of new players and calculating rank when the game ends.",
-      "demoLink": "https://aquariumpardata.com",
-      "sourceLink": "#",
+      "body": "A work luncheon event inspired me to build this app after seeing how long it took the organizers to rank the winners. Built with ReactJS frontend and NodeJS/Express/Postgres backend. Please allow 1-2 minutes when you click the demo and refresh for the project to build.",
+      "demoLink": "https://jellybean-app.herokuapp.com/",
+      "sourceLink": "https://github.com/duongdv95/howmanyjellybeans",
       "techUsed": ["css", "html", "javascript", "node", "react", "postgres"]
     },
     {
-      "image": "aquariumpardata.png",
+      "image": "portfolio.png",
       "title": "Portfolio",
-      "body": "This website.",
-      "demoLink": "https://aquariumpardata.com",
-      "sourceLink": "#",
+      "body": "Built using VueJS, this page is organized by 4 main components: Introduction, Terminal, Projects, and Contact. Changes to information on this site can be edited with a single JSON file which is used to render the components.",
+      "demoLink": "https://danielduong.com",
+      "sourceLink": "https://github.com/duongdv95/danielduong",
       "techUsed": ["css", "html", "javascript", "vue"]
     }
-  ]
+  ],
+  "introduction": "Hello world! I am an aspiring web developer. My passion is developing apps that solve unique problems.",
+  "contactInfo": {"email": "<a class='link' href='mailto: dvduong13@gmail.com'>dvduong13@gmail.com</a>",  "github": "<a class='link' href='https://github.com/duongdv95' target='_blank'>https://github.com/duongdv95</a>"},
+  "resume": "\"<a class='link' href='./daniel_duong.pdf' target='_blank'>daniel_duong.pdf</a>\"",
+  "location": "\"Garden Grove, California\"",
+  "hobbies": ["planted aquariums", "fishing", "web development", "national parks", "photography","weight lifting", "anime"],
+  "education": "\"B.S. in Mechanical Engineering | University of California, Irvine\"",
+  "skills": ["HTML", "CSS", "JavaScript", "React", "NodeJS"],
+  "email": "dvduong13@gmail.com",
+  "github": "https://github.com/duongdv95"
 }

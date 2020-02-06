@@ -17,15 +17,17 @@ export default {
 </script>
 
 <style lang="scss">
-body{
-  background-color: #f2f2f2;
+@import '@/styles/_websiteStyle';
+
+body {
+  background-color: $websitecolor;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $fontfamily;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #525f7f;
+  color: $fontcolor;
   padding: 0 1em;
 }
 
