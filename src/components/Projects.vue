@@ -93,6 +93,9 @@ export default {
       color: #fff;
       margin-right: 1em;
     }
+    a:last-child {
+      margin-top: 1em;
+    }
     a:hover {
       background: $blue;
       transform: translateY(-1px);
