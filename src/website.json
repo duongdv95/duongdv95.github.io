@@ -3,7 +3,7 @@
     {
       "image": "aquariumpardata.png",
       "title": "Aquarium PAR Database",
-      "body": "There was as lack of PAR data in the planted aquarium hobby so I decided to test some fixtures and put the data on a website. This site is built with ReactJS frontend with CSS grid to display data tables. The NodeJS/Express backend allows me to create, update, or delete fixture data and upload images.",
+      "body": "There was a lack of PAR data in the planted aquarium hobby so I decided to test some fixtures and put the data on a website. This site is built with ReactJS frontend with CSS grid to display data tables. The NodeJS/Express backend allows me to create, update, or delete fixture data and upload images.",
       "demoLink": "https://aquariumpardata.com",
       "sourceLink": "https://github.com/duongdv95/aquascapeparpublic",
       "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]

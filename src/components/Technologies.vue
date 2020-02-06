@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 .technologies {
-  margin: 1em 0;
+  margin-top: 1em;
 }
 .technologies .technologies-images {
   display: flex;
