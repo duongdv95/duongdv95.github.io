@@ -92,7 +92,6 @@ export default {
       background: $blue;
       color: #fff;
       margin-right: 1em;
-      margin-top: 1em;
     }
     a:last-child {
       margin-top: 1em;
