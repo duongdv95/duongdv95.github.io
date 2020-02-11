@@ -3,6 +3,7 @@
     <h1 id="projects" class="projects-header">
       Projects
     </h1>
+    <hr class="header-underline">
     <div class="projects-container">
       <div class="project-card" v-for="(item, index) in projects" v-bind:key="index">
         <img :src="require(`@/assets/` + item.image)">
@@ -111,10 +112,20 @@ export default {
   }
 }
 
-.projects .projects-header {
-  text-align: center;
-  padding-top: 2em;
-  margin-bottom: 3em;
+.projects {
+  .projects-header {
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .header-underline {
+    width: 100px;
+    margin-top: 4px;
+    height: 0px;
+    border: 0;
+    border-top: 3px solid $blue;
+    margin-bottom: 6em;
+  }
 }
 
 @media (min-width: 1000px) {
