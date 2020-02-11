@@ -11,7 +11,7 @@
     {
       "image": "kawaiipetprints.png",
       "title": "Kawaii Pet Prints",
-      "body": "I developed this art proofing app to work together with shopify. It works by making a request to a shopify API to get all the current orders. A graphic designer can upload a vectorized art that can be viewed by the customer. The customer can approve the art with a background or request a revision. This is still a work in progress.",
+      "body": "I developed this art proofing app to work together with shopify. It works by making a request to a shopify API to get all the current orders. A graphic designer can upload a vectorized art that can be viewed by the customer. The customer can approve the art with a background or request a revision. This is still a work in progress. Please use order number 1001 and email danielvanduong@gmail.com to demo.",
       "demoLink": "https://kawaiipetprints.danielduong.com",
       "sourceLink": "https://github.com/duongdv95/kawaiipetprints-proofing-app",
       "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
