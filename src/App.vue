@@ -37,7 +37,7 @@ body {
     grid-template-columns: 1fr minmax(auto, 60em) 1fr;
   }
 
-  #nav, .home {
+  #nav, .home, #todos {
     grid-column: 2/3;
   }
   }
