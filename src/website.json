@@ -11,7 +11,7 @@
     {
       "image": "kawaiipetprints.png",
       "title": "Kawaii Pet Prints",
-      "body": "I developed this art proofing app to work together with shopify. It works by making a request to a shopify API to get all the current orders. A graphic designer can upload a vectorized art that can be viewed by the customer. The customer can approve the art with a background or request a revision. This is still a work in progress. Please use order number 1001 and email danielvanduong@gmail.com to demo.",
+      "body": "I developed this art proofing app to work together with shopify. It works by making a request to a shopify API to get all the current orders. A graphic designer can upload a vectorized art that can be viewed by the customer. The customer can approve the art with a background or request a revision. This is still a work in progress.",
       "demoLink": "https://kawaiipetprints.danielduong.com/customer?order_id=1931228217481",
       "sourceLink": "https://github.com/duongdv95/kawaiipetprints-proofing-app",
       "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
@@ -19,7 +19,7 @@
     {
       "image": "howmanyjellybeans.png",
       "title": "How Many Jelly Beans?",
-      "body": "A work luncheon event inspired me to build this app after seeing how long it took the organizers to rank the winners. Built with ReactJS frontend and NodeJS/Express/Postgres backend. Please allow 1-2 minutes when you click the demo and refresh for the project to build.",
+      "body": "There was a jelly bean guessing activity with several prizes at my work luncheon. At the end the game, I noticed it took awhile to sort through the winners so I thought of creating a web app that would allow players to submit a guess amd rank the guesses automatically. I built this app with a ReactJS frontend and NodeJS/Express/Postgres backend. Please allow 1-2 minutes when you click the demo and refresh for the project to build.",
       "demoLink": "https://jellybean-app.herokuapp.com/",
       "sourceLink": "https://github.com/duongdv95/howmanyjellybeans",
       "techUsed": ["css", "html", "javascript", "node", "react", "postgres"]
