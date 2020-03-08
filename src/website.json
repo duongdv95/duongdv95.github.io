@@ -19,7 +19,7 @@
     {
       "image": "howmanyjellybeans.png",
       "title": "How Many Jelly Beans?",
-      "body": "There was a jelly bean guessing activity with several prizes at my work luncheon. At the end the game, I noticed it took awhile to sort through the winners so I thought of creating a web app that would allow players to submit a guess amd rank the guesses automatically. I built this app with a ReactJS frontend and NodeJS/Express/Postgres backend. Please allow 1-2 minutes when you click the demo and refresh for the project to build.",
+      "body": "There was a jelly bean guessing activity with several prizes at my work luncheon. At the end of the game, I noticed it took some time to sort through the winners so I thought of creating a web app that would allow players to submit a guess amd rank the guesses automatically. I built this app with a ReactJS frontend and NodeJS/Express/Postgres backend. Please allow 1-2 minutes when you click the demo and refresh for the project to build.",
       "demoLink": "https://jellybean-app.herokuapp.com/",
       "sourceLink": "https://github.com/duongdv95/howmanyjellybeans",
       "techUsed": ["css", "html", "javascript", "node", "react", "postgres"]
