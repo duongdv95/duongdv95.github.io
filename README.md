@@ -10,15 +10,8 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### To deploy to github
 ```
-npm run build
+deploy.sh
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This will create build files and push to Master Branch which is deployed to my github pages
