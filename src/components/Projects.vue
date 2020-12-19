@@ -18,7 +18,7 @@
             <a :href="item.demoLink" target="_blank">
               Live Demo <i class="fas fa-external-link-alt"></i>
             </a>
-            <a :href="item.sourceLink" class="secondary" target="_blank">
+            <a v-if="item.sourceLink" :href="item.sourceLink" class="secondary" target="_blank">
               View Source <i class="fab fa-github"></i>
             </a>
           </div>

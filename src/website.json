@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "image": "instadroid.png",
+      "title": "Instadroid - Instagram Automation",
+      "body": "I was inspired by an Instagram automation project, InstaPy by Tim Großmann which automated liking by tag, following, and unfollowing. It uses browser automation which worked well for some time until Instagram was able to detect this. I built Instadroid for Android as an alternative which uses Accessibility API to simulate clicks and scrolls. It features liking by hashtag, following by hashtag, and unfollowing with a safelist to prevent unfollowing friends.",
+      "demoLink": "https://www.youtube.com/watch?v=gTtAFUv97Pc"
+    },
+    {
       "image": "aquariumpardata.png",
       "title": "Aquarium PAR Database",
       "body": "There was a lack of PAR data in the planted aquarium hobby so I decided to test some fixtures and put the data on a website. This site is built with ReactJS frontend with CSS grid to display data tables. The NodeJS/Express backend allows me to create, update, or delete fixture data and upload images.",
