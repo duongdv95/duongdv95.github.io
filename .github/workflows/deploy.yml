@@ -32,4 +32,5 @@ jobs:
           git init
           git add -A
           git commit -m 'deploy'
-          git push -f git@github.com:duongdv95/duongdv95.github.io.git master
+          git push -f https://${{ secrets.PAT }}@github.com/duongdv95/duongdv95.github.io.git master
+
