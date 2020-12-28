@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "image": "japan.png",
+      "title": "Fly To Japan For Free",
+      "body": "I created a guide to teach people how to earn a free flight using credit card points. I used React to generate a static site and Bulma for css styling. Website is deployed to S3 when repository gets updated via Github Actions.",
+      "demoLink": "https://freejapanflight.com",
+      "sourceLink": "https://github.com/duongdv95/howtoflytojapanforfree",
+      "techUsed": ["css", "bulma", "html", "javascript", "node", "react", "s3"]
+    },
+    {
       "image": "instadroid.png",
       "title": "Instadroid - Instagram Automation",
       "body": "I was inspired by an Instagram automation project, InstaPy by Tim Großmann which automated liking by tag, following, and unfollowing. It uses browser automation which worked well for some time until Instagram was able to detect this. I built Instadroid for Android as an alternative which uses Accessibility API to simulate clicks and scrolls. It features liking by hashtag, following by hashtag, and unfollowing with a safelist to prevent unfollowing friends.",
@@ -12,7 +20,15 @@
       "body": "There was a lack of PAR data in the planted aquarium hobby so I decided to test some fixtures and put the data on a website. This site is built with ReactJS frontend with CSS grid to display data tables. The NodeJS/Express backend allows me to create, update, or delete fixture data and upload images.",
       "demoLink": "https://aquariumpardata.com",
       "sourceLink": "https://github.com/duongdv95/aquascapeparpublic",
-      "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
+      "techUsed": [
+        "css",
+        "html",
+        "javascript",
+        "node",
+        "react",
+        "dynamodb",
+        "s3"
+      ]
     },
     {
       "image": "kawaiipetprints.png",
@@ -20,7 +36,15 @@
       "body": "I developed this art proofing app to work together with shopify. It works by making a request to a shopify API to get all the current orders. A graphic designer can upload a vectorized art that can be viewed by the customer. The customer can approve the art with a background or request a revision. This is still a work in progress.",
       "demoLink": "https://kawaiipetprints.danielduong.com/customer?order_id=1931228217481",
       "sourceLink": "https://github.com/duongdv95/kawaiipetprints-proofing-app",
-      "techUsed": ["css", "html", "javascript", "node", "react", "dynamodb", "s3"]
+      "techUsed": [
+        "css",
+        "html",
+        "javascript",
+        "node",
+        "react",
+        "dynamodb",
+        "s3"
+      ]
     },
     {
       "image": "howmanyjellybeans.png",
@@ -40,10 +64,22 @@
     }
   ],
   "introduction": "Hello world! I am an aspiring software developer. My passion is developing apps that solve unique problems.",
-  "contactInfo": {"email": "<a class='link' href='mailto: dvduong13@gmail.com'>dvduong13@gmail.com</a>",  "github": "<a class='link' href='https://github.com/duongdv95' target='_blank'>https://github.com/duongdv95</a>"},
+  "contactInfo": {
+    "email": "<a class='link' href='mailto: dvduong13@gmail.com'>dvduong13@gmail.com</a>",
+    "github": "<a class='link' href='https://github.com/duongdv95' target='_blank'>https://github.com/duongdv95</a>"
+  },
   "resume": "\"<a class='link' href='./daniel_duong.pdf' target='_blank'>daniel_duong.pdf</a>\"",
   "location": "\"Garden Grove, California\"",
-  "hobbies": ["reef keeping", "planted aquariums", "fishing", "web development", "national parks", "photography", "weight lifting", "anime"],
+  "hobbies": [
+    "reef keeping",
+    "planted aquariums",
+    "fishing",
+    "web development",
+    "national parks",
+    "photography",
+    "weight lifting",
+    "anime"
+  ],
   "education": "\"B.S. in Mechanical Engineering | University of California, Irvine\"",
   "skills": ["HTML", "CSS", "JavaScript", "React", "NodeJS", "Java"],
   "email": "dvduong13@gmail.com",
